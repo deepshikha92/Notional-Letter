@@ -1,0 +1,246 @@
+/* Reset default styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background  
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    line-height: 1.4;
+}
+
+/* Header  
+header {
+    background-color: #110553ef;
+    color: #fffafa;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main container  
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 251, 251, 0.9);
+    /* Slightly transparent white  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Letter template section 
+.letter-template {
+    background: linear-gradient(to right, rgb(91, 97, 180), rgb(158, 96, 163), rgb(190, 119, 163));
+    border: 1px solid #3d3131;
+    padding: 2rem;
+    border-radius: 1px;
+    box-shadow: 5px 2px 4px rgba(75, 8, 8, 0.836);
+    font-weight: bold;
+}
+
+/* Input fields  
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Submit button  
+#submit-button {
+    background-color: #0e0635;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+}
+
+#submit-button:hover {
+    background-color: #1d0e64;
+}
+
+/* Reveal button  
+.reveal-button {
+    background-color: #ddd;
+    color: #000000;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+}
+
+.reveal-button:hover {
+    background-color: #ffffff;
+}
+
+/* Hidden content  
+.hidden {
+    display: none;
+}
+
+/* Letter History section  
+#letter-history {
+    background: linear-gradient(to right, rgb(91, 97, 180), rgb(158, 96, 163), rgb(190, 119, 163));
+    /* Slightly transparent white  
+    padding: 2rem;
+    border-radius: 0px;
+    box-shadow: 5px 2px 4px rgba(182, 75, 75, 0.911);
+}
+
+#letter-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Download button  
+#download-button {
+    background-color: #0e0635;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+}
+
+#download-button:hover {
+    background-color: #211077;
+}
+
+/* Statistics section 
+#statistics {
+    background: linear-gradient(to right, rgb(91, 97, 180), rgb(158, 96, 163), rgb(190, 119, 163));
+    padding: 2rem;
+    margin-top: 0rem;
+    border-radius: 0px;
+    box-shadow: 5px 4px 8px rgb(165, 46, 46);
+    
+}
+
+/* Total count  
+#total-count {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Daily, weekly, and monthly counts  
+#daily-count,
+#weekly-count,
+#monthly-count {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+/* Responsive adjustments 
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .letter-template {
+        padding: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 14px;
+    }
+}
+
+
+::placeholder{
+    font-style: italic;
+} */
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cec2c2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    color: #28a745;
+}
+
+.letter-template, #letter-history, #statistics {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    /* max-width: 600px; */
+}
+
+.letter-template input, .letter-template textarea {
+    width: calc(100% - 8px);
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.hidden{
+    display: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#letter-list {
+    list-style: none;
+    padding: 0;
+}
+
+#letter-list li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

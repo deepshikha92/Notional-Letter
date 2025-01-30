@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Issuance</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Letter Issuance Portal</h1>
+    </header>
+    <!-- letter templates -->
+    <div class="letter-template">
+        <h2><b>Your Letter</b></h2>
+        <p>Date: <input type="date" id="letter-date"></p>
+        <p>To: <input type="text" id="letter-recipient" placeholder="Recipient"></p>
+        <textarea id="letter-content" rows="10" placeholder="Enter your letter content"></textarea>
+        <p>Your Name: <input type="text" id="your-name" placeholder="Your Name"></p>
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <!-- Letter History section -->
+    <section id="letter-history">
+        <h2>Letter History</h2>
+        <ul id="letter-list"></ul>
+        <button id="download-button">Download Letters</button>
+    </section>
+
+    <!-- Statistics section -->
+    <section id="statistics">
+        <h2>Statistics</h2>
+        <p>Total Letters Issued: <span id="total-count">0</span></p>
+        <p id="daily-count"></p>
+        <p id="weekly-count"></p>
+        <p id="monthly-count"></p>
+    </section>
+    </section>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
