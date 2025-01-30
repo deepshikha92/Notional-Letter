@@ -1,6 +1,7 @@
 # Notional-Letter
 
 🚀 Features
+
 📝 Write Letters: Create and send letters to a specific person.
 📜 History Tracking: View previously written letters in an organized manner.
 📊 Statistics Dashboard: Gain insights on letter frequency, word usage, and more.
